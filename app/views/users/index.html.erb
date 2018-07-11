@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="navbar-form navbar-left">
+    <%= form_tag users_path, method: :get, class: "form-group" do %>
+      <%= text_field_tag :term, "", class: "form-control" %>
+      <%= submit_tag 'Search', class: "btn" %>
+    <% end %>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

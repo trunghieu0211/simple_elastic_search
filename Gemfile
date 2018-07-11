@@ -13,6 +13,9 @@ gem "jbuilder", "~> 2.5"
 gem "devise"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "chewy"
+gem "ffaker"
+gem "bootstrap-sass", "~> 3.3.7"
+gem "jquery-rails"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
